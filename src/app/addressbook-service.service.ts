@@ -19,7 +19,7 @@ export class AddressbookServiceService {
     return this.http.get("http://localhost:8080/addressBook/retrieve");
   }
   getAddressBookById(Id:number){
-    return this.http.get("http://localhost:8080/addressBook/get/"+Id);
+    return this.http.get("http://localhost:8080/addressBook/findById/"+Id);
   }
   updateAddressBookById(Id:number,addressbook:any){
     return this.http.put("http://localhost:8080/addressBook/update/"+Id,addressbook);
