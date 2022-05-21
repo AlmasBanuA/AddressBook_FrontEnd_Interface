@@ -19,8 +19,5 @@ export class HeaderComponent implements OnInit {
    this.router.navigate(["dashboard"]);
   }
 
-  // navigate to form component
-  onForm(){
-    this.router.navigate(["form"]);
-  }
+  
 }

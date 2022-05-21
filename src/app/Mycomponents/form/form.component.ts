@@ -24,7 +24,6 @@ Id: any = this.route.snapshot.paramMap.get('Id')
   //whenever the component is initialized ngOnInit method is invoked first
   ngOnInit(): void {
     this._service.getAddressBookById(this.Id).subscribe((getData: any) => {
-      console.log(getData.data);
       this.addressbook = getData.data;
     })
   
